@@ -1,0 +1,121 @@
+.about{
+    background-color: var(--colour-bg-secondry);
+    display: flex;
+    position: relative;
+    padding-top: 5rem;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.about__left , .about__right{
+    width: 50%;
+}
+.about__right div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    width: 32rem;
+    
+
+}
+.about__right div p{
+    display: flex;
+    text-align:justify;
+}
+
+.about__img {
+    display: flex;
+    width: 70%;
+    align-items: end;
+    animation: Float 5s ease infinite; 
+}
+.about__img img{
+    max-width: 40rem;
+
+}
+
+.about__btn{
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: #2b2c34;
+    color: #ddd;
+    gap: 0;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 24px;
+}
+.about__btn:hover{
+    background-color: var(--colour-primary);
+    color: white !important;
+    border: 1px solid var(--colour-primary);
+    
+}
+.about__btn:hover .icon{
+    color: #ddd;
+}
+
+
+.icon{
+    font-size: 36px ;
+    color: var(--colour-primary);
+}
+.about__btn-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+@media (max-width:1200px){
+    .about__img img{
+        max-width: 40rem;
+    }
+    .about__right div{
+        width: 25rem;
+    }
+
+
+
+}
+
+@media (max-width :990px){
+    .about{
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+    .about__left , .about__right{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .about__right div{
+        width: 42rem;
+        
+    }
+
+}
+@media (max-width :770px){
+    .about__img img{
+        max-width: 22rem;
+    }
+    .about__right div{
+        width: 35rem;
+        
+    }
+    .about__btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+@media (max-width :770px){
+    .about__img img{
+        width: 100%;
+    }
+}

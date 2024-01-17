@@ -1,0 +1,6 @@
+.team{
+    background-color: var(--colour-bg-secondry);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

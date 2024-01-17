@@ -1,0 +1,131 @@
+.hero{
+    background: url(../../assets/welcome-bg.png) no-repeat ;
+    background-size: 100%;
+    background-color: var(--colour-bg-secondry);
+    
+}
+section .main{
+    display: flex;
+}
+
+section .main .main-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* height: 40rem; */
+    /* text-align: left; */
+    /* align-items: center; */
+    margin: 10rem 5rem;
+    gap: 1rem;
+}
+section .main .main-left p{
+    display: block;
+    text-align: justify;
+    width: 30rem;
+}
+
+section .main .main-right{
+    width: 50%;
+    /* max-height: 40rem; */
+}
+
+section .main .main-left img{
+    height: 5rem;
+    width: 15rem;
+}
+
+section .main .main-right img{
+    height: 23rem;
+    margin: 12rem 0;
+    animation: Float 5s ease infinite; 
+    
+}
+
+
+
+@media(max-width:1200px){
+    section .main .main-right {
+        width: 50%;
+    }
+    section .main .main-left{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        /* height: 40rem; */
+        /* text-align: left; */
+        /* align-items: center; */
+        margin: 10rem 5rem ;
+        gap: 1rem;
+    }
+    
+    section .main .main-right img{
+        display: flex;
+        height: 15rem;
+        margin: 12rem 0;
+        text-align: left;
+        align-items: start;
+        
+    }
+    section .main .main-left p{
+        font-size: 80%;
+        width: 25rem;
+    }
+}
+
+@media(max-width:990px){
+    section .main {
+        padding: 0;
+        margin: 0;
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+    section .main .main-right ,section .main .main-left {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    section .main .main-right img{
+        display: flex;
+        height: 19rem;
+        text-align: center;
+        margin: 0;
+        padding: 0px;
+    }
+    section .main .main-left{
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    section .main .main-right {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    section .main .main-left p{
+        font-size: 100%;
+        width: 37rem;
+        padding: 1%;
+    }
+
+
+    
+}
+
+
+@media(max-width:770px){
+    section .main .main-left p{
+        font-size: 100%;
+        width: 37rem;
+        padding: 0.5rem;
+    }
+
+}
+@media(max-width:580px){
+    section .main .main-left p{
+        font-size: 100%;
+        width: 80%;
+        padding: 0.5rem;
+    }
+
+}

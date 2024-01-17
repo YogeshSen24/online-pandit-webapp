@@ -1,0 +1,93 @@
+.validation{
+    background: url(../../assets/hand-painted-watercolor-abstract-watercolor-background_23-2149001486.avif);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.validation__logo{
+    width: 10rem;
+    animation: Float 5s ease infinite; 
+    margin-bottom: 1rem;
+}
+
+.val_form__container{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--colour-primary);
+    border-radius: 15px;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.validation__field{
+    width: 80%;
+    border-radius: 30px 30px 30px 0;
+    height: 3rem;
+    background: transparent;
+    font-size: 18px;
+    color: var(--colour-primary);
+    padding: 15px;
+    border: 2px solid var(--colour-primary);
+    
+}
+.validation__btn{
+    width: 80%;
+    border-radius: 30px 30px 30px 0;
+    height: 3rem;
+    background:var(--colour-primary);
+    font-size: 18px;
+    color: black;
+    border: none;
+}
+
+.validation__btn:hover{
+    transform: scale(1.02);
+}
+
+.validation__link{
+    color: var(--colour-primary);
+    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+}
+.validation__link:hover{
+    color: black;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+
+
+@media (max-width : 990px){
+    
+    .validation__btn , .validation__field{
+        font-size: 15px;
+        height: 2rem;
+    }
+}
+@media (max-width : 770px){
+    .form__container{
+        width: 35rem;
+    }
+}
+@media (max-width : 770px){
+    .form__container{
+        width: 90%;
+    }
+    .validation__btn , .validation__field{
+        font-size: 12px;
+        height: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
